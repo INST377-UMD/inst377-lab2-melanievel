@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>INST377 - Lab 2</title>
+    <style>
+      body {
+        background-color: lightpink;
+      }
+
+      input[type="submit"] {
+        border-color: deeppink;
+        background-color: rgb(178, 174, 174);
+        color: deeppink;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-left: 2px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: deeppink;
+        color: white;
+      }
+
+      .textInput label {
+        font-size: 25px;
+      }
+
+      .textInput input {
+        margin-bottom: 20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Contact Me!</h1>
+    <form
+      name="contactForm"
+      method="get"
+      action="INST377-Lab2_Page2.html"
+    >
+
+      <!-- Name -->
+      <div class="textInput">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstname" required />
+        <br />
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastname" required />
+        <br />
+
+        <!-- Email -->
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="user@gmail.com" required />
+        <br />
+
+        <!-- Additional Messages -->
+        <label for="messages">Any questions or additional messages?</label>
+        <br />
+        <input type="text" id="messages" />
+        <hr />
+      </div>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
